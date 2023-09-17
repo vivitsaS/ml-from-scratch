@@ -5,13 +5,13 @@ In practice, Gaussian Naive Bayes is commonly used for continuous numerical data
 It's important to note that Naive Bayes may not perform well in situations where the independence assumption is grossly violated or when feature interactions play a significant role. In such cases, more advanced models like decision trees, random forests, or neural networks may be more appropriate. Nonetheless, Naive Bayes remains a valuable and widely used algorithm in machine learning, especially for certain types of classification problems where its assumptions align well with the data characteristics.
 
 
-<!-- fit- -->
+# fit
 get n_samples, n_features,n_classes
 get mean and variance of each feature vector for each class
 calculate P(y)
 by precalculating these 3 entities, we are fitting the model
 by fixing mean and var, we are assuming a probability distribution that we get from train data,
-<!-- predict -->
+# predict
 in this formula, P(y|X) = P(y).pi(i=0 to n)[P(xi|y)]/P(X)
 all terms containing X or its components are from test data
 class conditionals, P(xi|y) is calculated using pdf
