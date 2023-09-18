@@ -1,10 +1,3 @@
-"""
-perceptron is similar to regression models, except it does not use
-gradient descent and it updates based on true difference between
-true and predicted vectors. It's a binary classifier, so the vectors have
-binary values
-"""
-
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 import matplotlib.pyplot as plt
