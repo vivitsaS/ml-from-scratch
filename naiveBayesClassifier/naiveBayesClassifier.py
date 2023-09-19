@@ -1,16 +1,3 @@
-# fit-
-# get n_samples, n_features,n_classes
-# get mean and variance of each feature vector for each class
-# calculate P(y)
-# by precalculating these 3 entities, we are fitting the model
-# by fixing mean and var, we are assuming a probability distribution that we get from train data,
-# predict
-# in this formula, P(y|X) = P(y).pi(i=0 to n)[P(xi|y)]/P(X)
-# all terms containing X or its components are from test data
-# class conditionals, P(xi|y) is calculated using pdf
-# the expression for P(y|X) needs laplace smoothening because if P(xi|y)-->0
-# it might lead to P(y|X) getting close to 0. 
-# 
 import numpy as np
 
 class naiveBayesClassifier():
