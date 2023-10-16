@@ -1,0 +1,1 @@
+The primary goal of SVM is to find the optimal hyperplane that best separates data points into different classes. For classification, this hyperplane should maximize the margin (the distance between the hyperplane and the nearest data points of each class). In the case of regression, the objective is to find the hyperplane that best fits the data while minimizing errors.
