@@ -6,6 +6,17 @@ Linear regression aims to find a linear relationship between input features and 
 - Mean squared error (MSE): A common loss function used to measure the error of the model's predictions.
 
 
+
+## Intuition and Math Behind It
+
+Linear Regression minimizes the cost function using gradient descent. It aims to reduce the error between predicted values and actual target values by iteratively updating the weights `w` and the bias `b`. The following formulas help in updating parameters during training:
+
+- `y_predicted = wx + b`: Linear equation for prediction.
+- `mean_squared_error = (1/n) * Σ(y_true - y_predicted)^2`: Cost function to minimize.
+- `dJ_dw = (1/n) * X^T * (y_predicted - y_true)`: Gradient of the cost function with respect to weights `w`.
+- `dJ_db = (1/n) * Σ(y_predicted - y_true)`: Gradient of the cost function with respect to bias `b`.
+- Parameter updates: `w -= learning_rate * dJ_dw`, `b -= learning_rate * dJ_db`.
+
 Aim is to fit the best straight line to a given dataset showing a relationship between 2 n-dimensional entities. 
 The equation of a straight line is-
 `y = slope*x + intercept`
@@ -33,6 +44,7 @@ R2 score how well the regression model explains the variability in the target va
 This code can be modified and optimized by using appropriate normalization techniques and 
 different cost functions and evaluation scores (for example, z-score, etc)
 depending on the nature of the dataset . 
+
 
 ## Implementation Details
 
@@ -66,3 +78,19 @@ Linear regression can be extended and modified for various use cases. Here are a
 * Regularization: Add L1 or L2 regularization to prevent overfitting when dealing with high-dimensional data.
 * Feature Engineering: Consider feature engineering techniques to create more meaningful features for better predictive performance.
 * Real-world Applications: Apply linear regression to various real-world problems, such as predicting housing prices, sales, or any continuous target variable.
+
+## Advantages and Limitations
+
+# Advantages:
+* Simplicity and interpretability.
+* Quick training and prediction.
+* Suitable for problems with linear relationships.
+
+# Limitations:
+* Limited to linear relationships.
+* Sensitive to outliers.
+* May overfit with many features.
+
+## Ideal Use Cases
+
+Linear Regression is suitable for scenarios where the relationship between input features and target variables is approximately linear. It is commonly used in finance, economics, social sciences, and many other fields for predicting numerical values based on historical data.

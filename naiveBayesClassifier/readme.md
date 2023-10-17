@@ -15,6 +15,17 @@ In practice, Gaussian Naive Bayes is commonly used for continuous numerical data
 
 It's important to note that Naive Bayes may not perform well in situations where the independence assumption is grossly violated or when feature interactions play a significant role. In such cases, more advanced models like decision trees, random forests, or neural networks may be more appropriate. Nonetheless, Naive Bayes remains a valuable and widely used algorithm in machine learning, especially for certain types of classification problems where its assumptions align well with the data characteristics.
 
+## Intuition and Math Behind It
+
+The algorithm estimates conditional probabilities for each class given the features. It relies on Bayes' theorem, where:
+
+\[ P(class|features) = \frac{P(features|class) \cdot P(class)}{P(features)} \]
+
+Here, 
+- \(P(class|features)\) is the probability that a data point belongs to a certain class given its features.
+- \(P(features|class)\) is the probability of observing the features given the class.
+- \(P(class)\) is the prior probability of the class.
+- \(P(features)\) is the probability of observing the features.
 
 ## Implementation Details
 
@@ -62,3 +73,20 @@ The Naive Bayes algorithm can be adapted and extended in various ways to suit di
 * Text Classification: Adapt the algorithm for text classification tasks by using the Multinomial Naive Bayes model.
 * Feature Engineering: Enhance the feature set by considering feature engineering techniques like TF-IDF or word embeddings for text data.
 * Real-world Applications: Apply Naive Bayes to real-world problems such as spam email detection, sentiment analysis, or document classification.
+
+## Advantages and Limitations
+
+# Advantages:
+
+* Simple and efficient.
+* Works well with high-dimensional data.
+* Suitable for both binary and multiclass classification.
+
+# Limitations:
+
+* Assumes feature independence (the "naive" assumption).
+* Can be sensitive to irrelevant features.
+* Not ideal for data with strong dependencies.
+
+## Ideal Use Cases
+Naive Bayes is ideal for text classification tasks, such as spam email detection, sentiment analysis, or document categorization. It's also useful for simple classification problems where feature independence is a reasonable assumption.
