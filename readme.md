@@ -38,7 +38,7 @@ Here are some of the machine learning algorithms implemented in this repository:
 The repository is organized into individual folders, with each folder corresponding to a specific machine learning algorithm. In each algorithm folder, you will typically find the following structure:
 
 - `algorithm.py`: The Python script containing the implementation of the algorithm using NumPy.
-- `README.md`: A detailed documentation file for the algorithm, including algorithm fundamentals, intuition and math behind it, implementation details, how to use, possible variations and modifications.
+- `README.md`: A detailed documentation file for the algorithm, including algorithm fundamentals, intuition and math behind it, implementation details, how to use, possible variations and modifications, advantages and limitations and ideal use cases.
 - `visualizer`: Some algorithms are accompanied by straightforward visual aids for enhanced comprehension.
 
 
