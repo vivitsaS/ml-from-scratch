@@ -15,8 +15,6 @@ reference to understand the cost function and its deravative: https://youtu.be/2
 
 ## Intuition and Math behind it
 
-## Math and Intuition Behind Logistic Regression
-
 The mathematical foundation of Logistic Regression includes the following key elements:
 
 * **Log-Odds:** Logistic Regression models the log-odds of the probability of a data point belonging to a particular class. The log-odds (logit) is defined as:
@@ -90,13 +88,13 @@ Logistic Regression has variations such as:
 
 ## Advantages and Limitations
 
-# Advantages:
+**Advantages:**
 
 * Simple, interpretable, and quick to train.
 * Suitable for binary classification problems.
 * Works well when the classes are linearly separable.
 
-# Limitations:
+**Limitations:**
 
 * Assumes a linear decision boundary.
 * Sensitive to outliers.

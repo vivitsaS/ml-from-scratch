@@ -75,7 +75,7 @@ k-NN is a versatile algorithm with various modifications and use cases:
 
 ## Advantages and Limitations
 
-# Advantages
+**Advantages:**
 
 * Simplicity: KNN is easy to understand and implement, making it an excellent choice for beginners in machine learning and data science.
 * Non-parametric: KNN is a non-parametric algorithm, which means it doesn't make strong assumptions about the underlying data distribution. It can handle data with complex patterns and shapes.
@@ -84,7 +84,7 @@ k-NN is a versatile algorithm with various modifications and use cases:
 * No Training Period: KNN doesn't require a training phase. It stores the training data and performs predictions on the fly, making it suitable for dynamic environments where data changes frequently.
 * Interpretability: KNN provides transparent and intuitive results. It's easy to explain why a particular prediction was made based on the nearest neighbors.
 
-# Limitations
+**Limitations:**
 
 * Computational Cost: KNN can be computationally expensive, especially with large datasets. The algorithm needs to calculate distances between the query point and all training data points.
 * Memory Usage: It stores the entire training dataset, which can be memory-intensive for large datasets.

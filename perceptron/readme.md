@@ -54,7 +54,7 @@ The Perceptron algorithm can be extended and modified in various ways to handle 
 
 ## Advantages and Limitations
 
-# Advantages
+**Advantages**
 
 * Simplicity: The Perceptron algorithm is straightforward and easy to understand. It's an excellent choice for binary classification tasks, especially for beginners in machine learning.
 * Low Computational Cost: The Perceptron makes quick predictions since it processes each data point only once.
@@ -63,7 +63,7 @@ The Perceptron algorithm can be extended and modified in various ways to handle 
 * Linearly Separable Data: It works well when the data is linearly separable, and the classes can be distinguished by a hyperplane.
 * Interpretability: The Perceptron provides transparency, allowing easy interpretation of the decision boundary.
 
-# Limitations
+**Limitations**
 
 * Limited to Linear Separability: The Perceptron is not suitable for nonlinear data. It cannot handle complex patterns and is sensitive to outliers.
 * Convergence Issues: If the data is not linearly separable, the Perceptron may not converge to a solution. In such cases, a maximum number of iterations or early stopping is required.

@@ -76,13 +76,13 @@ The Naive Bayes algorithm can be adapted and extended in various ways to suit di
 
 ## Advantages and Limitations
 
-# Advantages:
+**Advantages:**
 
 * Simple and efficient.
 * Works well with high-dimensional data.
 * Suitable for both binary and multiclass classification.
 
-# Limitations:
+**Limitations:**
 
 * Assumes feature independence (the "naive" assumption).
 * Can be sensitive to irrelevant features.

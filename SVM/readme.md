@@ -60,7 +60,7 @@ The provided SVM code is a basic implementation. You can extend and modify it fo
 
 ## Advantages and Limitations of Support Vector Machine (SVM)
 
-# Advantages
+**Advantages**
 
 * High Classification Accuracy: SVM is known for its high accuracy in both linear and nonlinear data classification.
 * Effective in High-Dimensional Spaces: SVM performs well even in datasets with a high number of dimensions, making it suitable for text and image data.
@@ -69,7 +69,7 @@ The provided SVM code is a basic implementation. You can extend and modify it fo
 * Margin Maximization: SVM focuses on maximizing the margin between classes, leading to better generalization and reduced risk of misclassification.
 * Outlier Robustness: SVM is less sensitive to outliers due to its focus on the support vectors nearest to the decision boundary.
 
-# Limitations
+**Limitations**
 
 * Computationally Intensive: SVM can be computationally expensive, especially when working with large datasets.
 * Model Complexity: SVM models can be challenging to interpret and may require domain knowledge for effective use.
