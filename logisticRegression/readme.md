@@ -13,6 +13,29 @@ The expressions for the derivative of this cost function happens to be the same 
 
 reference to understand the cost function and its deravative: https://youtu.be/2BkqApHKwn0?si=Y4EytirbyyTD_3aD
 
+## Intuition and Math behind it
+
+## Math and Intuition Behind Logistic Regression
+
+The mathematical foundation of Logistic Regression includes the following key elements:
+
+* **Log-Odds:** Logistic Regression models the log-odds of the probability of a data point belonging to a particular class. The log-odds (logit) is defined as:
+  \[logit(p) = \ln\left(\frac{p}{1-p}\right)\]
+  where \(p\) is the probability of a positive outcome.
+
+* **Sigmoid Function:** The sigmoid function transforms the log-odds into a probability between 0 and 1:
+  \[P(Y=1|X) = \frac{1}{1 + e^{-\left(\beta_0 + \beta_1X\right)}}\]
+  where \(P(Y=1|X)\) is the probability that the dependent variable \(Y\) is 1 given the predictor \(X\), and \(\beta_0\) and \(\beta_1\) are model parameters.
+
+* **Log-Likelihood Function:** Logistic Regression optimizes the log-likelihood function to find the best-fitting model parameters. The log-likelihood is calculated based on the predicted probabilities for the observed data.
+
+* **Cost Function:** The logistic regression cost function, often referred to as the cross-entropy loss or log loss, measures the difference between the predicted probabilities and the actual outcomes.
+
+* **Gradient Descent:** Logistic Regression parameters are estimated using optimization techniques like gradient descent. The gradient of the cost function is used to update the model's weights iteratively.
+
+* **Regularization Terms:** Regularization terms, such as L1 or L2 regularization, can be added to the cost function to prevent overfitting by penalizing large parameter values.
+
+In summary, Logistic Regression models the probability of a binary outcome using the sigmoid function and linear decision boundaries. Its mathematical foundation involves log-odds, likelihood optimization, and cost functions. Regularization techniques can be incorporated to improve the model's performance.
 
 ## Implementation Details
 
@@ -67,12 +90,14 @@ Logistic Regression has variations such as:
 
 ## Advantages and Limitations
 
-**Advantages:**
+# Advantages:
+
 * Simple, interpretable, and quick to train.
 * Suitable for binary classification problems.
 * Works well when the classes are linearly separable.
 
-**Limitations:**
+# Limitations:
+
 * Assumes a linear decision boundary.
 * Sensitive to outliers.
 * May overfit with many features.

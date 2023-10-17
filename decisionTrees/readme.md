@@ -72,4 +72,4 @@ Decision trees are ideal for situations where interpretability and explainabilit
 * Financial risk assessment: Decision trees can be used to evaluate the credit risk of applicants.
 * Customer churn prediction: Understanding why customers leave or stay is essential.
 * Fraud detection: Detecting fraudulent transactions while explaining the decision.
-* Any problem where understanding the decision-making process is critical.
+* Any problem where understanding the decision-making process is critical. 

@@ -8,6 +8,37 @@ k-NN is a non-parametric and instance-based machine learning algorithm. Key conc
 KNN is a simple yet powerful concept that relies on the proximity of data points in a feature space to make predictions. It's versatile and easy to understand, making it a valuable tool in various machine learning tasks, particularly for small to medium-sized datasets with clear patterns. However, it has limitations, such as computational efficiency in high-dimensional spaces and sensitivity to noisy data.
 The prediction for a given `(x,y)` is the most commonly occuring result- falling in `k` unit radius around the point `(x,y)` the chosen average euclidaen distance = `k`
 
+## Intuition and Math behind it
+
+k-Nearest Neighbors (KNN) is a simple yet powerful classification algorithm that makes predictions based on the majority class among its k-nearest data points. The core intuition behind KNN can be summarized as follows:
+
+* **Similarity-Based Classification:** KNN assumes that similar data points tend to belong to the same class. It measures similarity using a distance metric, commonly the Euclidean distance.
+* **Local Decision Boundary:** Instead of a global decision boundary, KNN uses a local decision boundary around each data point. This flexibility enables KNN to handle complex and nonlinear decision boundaries.
+* **Voting Mechanism:** KNN employs a voting mechanism, where each of the k-nearest neighbors 'votes' for their respective class. The class with the most votes is assigned to the data point.
+* **Parameter Selection:** The choice of the parameter k (number of neighbors) is critical. A smaller k may lead to overfitting, while a larger k can result in underfitting.
+
+The mathematical foundation of KNN includes the following key elements:
+
+* **Distance Metric:** KNN uses a distance metric (typically Euclidean distance) to measure the similarity between data points. Given two data points A and B, the Euclidean distance is computed as:
+  \[d(A, B) = \sqrt{\sum_{i=1}^{n} (A_i - B_i)^2}\]
+  Where \(A_i\) and \(B_i\) are the feature values for the ith dimension.
+
+* **KNN Algorithm:**
+    1. Compute the distance between the new data point and all training data points.
+    2. Select the k-nearest data points based on the computed distances.
+    3. Count the frequency of each class among these k neighbors.
+    4. Assign the class with the highest frequency as the predicted class for the new data point.
+
+* **Weighted Voting:** In some cases, you can assign weights to neighbors based on their proximity. Closer neighbors have a greater influence on the prediction.
+
+* **Selecting the Optimal k:** The choice of the value for k is crucial. Too small values of k can lead to noisy predictions, while too large values can lead to overly smooth decision boundaries. Cross-validation techniques are often used to determine the optimal k.
+
+* **Normalization:** Feature scaling is essential in KNN to ensure that no single feature dominates the distance calculation.
+
+* **Handling Categorical Features:** KNN can be extended to handle categorical features by using appropriate distance metrics, such as Hamming distance for binary data.
+
+In summary, KNN's mathematical foundation is rooted in the concept of distance and similarity, and it classifies data points based on the majority class of their k-nearest neighbors. Parameter selection and data preprocessing play crucial roles in the performance of the KNN algorithm.
+
 ## Implementation Details
 
 The script defines a `KNN` class with the following methods:
@@ -42,9 +73,9 @@ k-NN is a versatile algorithm with various modifications and use cases:
 * Weighted k-NN: Weight the influence of neighbors based on their distance, giving closer neighbors more importance.
 * Distance-Weighted Voting: Assign different weights to neighbors based on their distance when performing the majority vote.
 
-# Advantages and Limitations
+## Advantages and Limitations
 
-## Advantages
+# Advantages
 
 * Simplicity: KNN is easy to understand and implement, making it an excellent choice for beginners in machine learning and data science.
 * Non-parametric: KNN is a non-parametric algorithm, which means it doesn't make strong assumptions about the underlying data distribution. It can handle data with complex patterns and shapes.
@@ -53,7 +84,7 @@ k-NN is a versatile algorithm with various modifications and use cases:
 * No Training Period: KNN doesn't require a training phase. It stores the training data and performs predictions on the fly, making it suitable for dynamic environments where data changes frequently.
 * Interpretability: KNN provides transparent and intuitive results. It's easy to explain why a particular prediction was made based on the nearest neighbors.
 
-## Limitations
+# Limitations
 
 * Computational Cost: KNN can be computationally expensive, especially with large datasets. The algorithm needs to calculate distances between the query point and all training data points.
 * Memory Usage: It stores the entire training dataset, which can be memory-intensive for large datasets.

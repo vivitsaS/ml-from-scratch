@@ -89,4 +89,5 @@ The Naive Bayes algorithm can be adapted and extended in various ways to suit di
 * Not ideal for data with strong dependencies.
 
 ## Ideal Use Cases
+
 Naive Bayes is ideal for text classification tasks, such as spam email detection, sentiment analysis, or document categorization. It's also useful for simple classification problems where feature independence is a reasonable assumption.

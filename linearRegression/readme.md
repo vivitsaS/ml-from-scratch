@@ -5,8 +5,6 @@ Linear regression aims to find a linear relationship between input features and 
 - Gradient descent: An optimization technique used to find the best weights for the model.
 - Mean squared error (MSE): A common loss function used to measure the error of the model's predictions.
 
-
-
 ## Intuition and Math Behind It
 
 Linear Regression minimizes the cost function using gradient descent. It aims to reduce the error between predicted values and actual target values by iteratively updating the weights `w` and the bias `b`. The following formulas help in updating parameters during training:
@@ -44,7 +42,6 @@ R2 score how well the regression model explains the variability in the target va
 This code can be modified and optimized by using appropriate normalization techniques and 
 different cost functions and evaluation scores (for example, z-score, etc)
 depending on the nature of the dataset . 
-
 
 ## Implementation Details
 
