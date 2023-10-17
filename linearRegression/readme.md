@@ -79,11 +79,13 @@ Linear regression can be extended and modified for various use cases. Here are a
 ## Advantages and Limitations
 
 # Advantages:
+
 * Simplicity and interpretability.
 * Quick training and prediction.
 * Suitable for problems with linear relationships.
 
 # Limitations:
+
 * Limited to linear relationships.
 * Sensitive to outliers.
 * May overfit with many features.
