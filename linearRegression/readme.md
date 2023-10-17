@@ -8,19 +8,19 @@ Linear regression aims to find a linear relationship between input features and 
 
 Aim is to fit the best straight line to a given dataset showing a relationship between 2 n-dimensional entities. 
 The equation of a straight line is-
-\(y = slope*x + intercept\) 
+`y = slope*x + intercept`
 
 So the aim is to find the best slope and intercept for a given set of y and x this can be done by iteratively minimizing the difference. This difference that needs to be minimized is called the cost function. between y and the model mx+c.
 
 In case of n dimensional matrices,  
-\(matrix Y = dot(weight matrix W, ; X)\) + bias matrix\
+`matrix Y = dot(weight matrix W, ; X)\) + bias matrix`
 
 So in this case, we need to find the best weight matrix and the bias matrix the cost function in this case would be-
-\(J = (y - (wx+b))^2 \)
+`J = (y - (wx+b))^2`
 J, here is MSE- the mean squared error.
-We need to find the best w and b such that J is minimum.
-\(dj/dw shape - (n_features,n_samples)
-dj_dw = [gradient_w1, gradient_w2, gradient_w3, ..., gradient_wn]\), 
+We need to find the best `w` and `b` such that `J` is minimum.
+`dj/dw shape - (n_features,n_samples)`
+`dj_dw = [gradient_w1, gradient_w2, gradient_w3, ..., gradient_wn]`
 n = n_features
 Each gradient_wX represents the gradient of the cost function with respect to the weight wX,
 where X is the feature number. These gradients guide the updates of the respective weights

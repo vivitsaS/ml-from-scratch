@@ -6,7 +6,7 @@ k-NN is a non-parametric and instance-based machine learning algorithm. Key conc
 - Majority Vote: Classifying new data points based on the majority class among their k-nearest neighbors.
 
 KNN is a simple yet powerful concept that relies on the proximity of data points in a feature space to make predictions. It's versatile and easy to understand, making it a valuable tool in various machine learning tasks, particularly for small to medium-sized datasets with clear patterns. However, it has limitations, such as computational efficiency in high-dimensional spaces and sensitivity to noisy data.
-The prediction for a given (x,y) is the most commonly occuring result- falling in k unit radius around the point (x,y) the chosen average euclidaen distance = k
+The prediction for a given `(x,y)` is the most commonly occuring result- falling in `k` unit radius around the point `(x,y)` the chosen average euclidaen distance = `k`
 
 ## Implementation Details
 

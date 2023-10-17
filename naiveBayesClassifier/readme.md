@@ -27,18 +27,18 @@ The script defines a `naiveBayesClassifier` class with the following methods:
 # fit
 
 Get n_samples, n_features,n_classes.
-Get mean and variance of each feature vector for each class calculate \(P(y)\).
+Get mean and variance of each feature vector for each class calculate `P(y)`.
 By precalculating these 3 entities, we are fitting the model. By fixing mean and var, we are assuming a probability distribution that we get from train data.
 
 # predict
 
 In this formula, 
-\(P(y|X) = P(y).pi(i=0 to n)[P(xi|y)]/P(X)\)
+`P(y|X) = P(y).pi(i=0 to n)[P(xi|y)]/P(X)`
 All terms containing X or its components are from test data.
-Class conditional probability, \(P(xi|y)\) is calculated using PDF.
-The expression for \(P(y|X)\) needs laplace smoothening because if \(P(xi|y)-->0\)
-it might lead to \(P(y|X)\) getting close to 0. 
-\(y = argmax of predicted P(y)\) (posterior probability)
+Class conditional probability, `P(xi|y)` is calculated using PDF.
+The expression for `P(y|X)` needs laplace smoothening because if `P(xi|y)-->0`
+it might lead to `P(y|X)` getting close to 0. 
+`y = argmax of predicted P(y)` (posterior probability)
 
 ## How to Use
 
