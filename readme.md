@@ -58,10 +58,6 @@ If you're new to this repository, here's how you can get started:
 * Read the README.md file for that algorithm, which provides comprehensive information about the algorithm, its implementation, and usage.
 * Explore the Python script (algorithm.py) for the algorithm's implementation.
 
-## Contributing
-
-I appreciate contributions from the machine learning community. If you'd like to contribute your own implementations, improve existing code, or enhance documentation, please follow the contribution guidelines outlined in the repository.
-
 ## Acknowledgements
 
 This script is for educational purposes and was inspired by various machine learning courses and tutorials.
@@ -69,8 +65,6 @@ Special credit and thanks to
 * StatQuest with Josh Starmer https://youtube.com/playlist?list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF&si=_Rc68W_GaDNoVJdl 
 * Patrick Loeber https://youtube.com/playlist?list=PLqnslRFeH2Upcrywf-u2etjdxxkL8nl7E&si=Njrvja0dI7NmaPEx 
 
-## License
-This repository is open-source and provided under the MIT License. You are free to use, modify, and distribute the code for your projects.
 
 ## Contact
 If you have any questions or feedback, feel free to contact me at vivitsa.shankar99@gmail.com. 
