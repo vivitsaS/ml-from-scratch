@@ -14,7 +14,7 @@ As an early professional, I embarked on the journey of implementing machine lear
 
 - **Educational Resource**: This repository serves as an educational resource for others who want to learn about machine learning. It provides clear explanations and practical examples to demystify complex concepts.
 
-- **Contributions to the Community**: By sharing these implementations, I hope to contribute to the machine learning community. Others can benefit from the code and insights I've gained over my career.
+- **Contributions to the Community**: By sharing these implementations, I hope to contribute to the machine learning community. Others can benefit from the code and insights I've gained so far.
 
 ## Overview
 
@@ -35,7 +35,7 @@ Here are some of the machine learning algorithms implemented in this repository:
 
 ## Directory Structure
 
-The repository is organized into individual folders, with each folder corresponding to a specific machine learning algorithm. In each algorithm folder, you will typically find the following structure:
+The repository is organized into individual folders, with each folder corresponding to a specific machine-learning algorithm. In each algorithm folder, you will typically find the following structure:
 
 - `algorithm.py`: The Python script containing the implementation of the algorithm using NumPy.
 - `README.md`: A detailed documentation file for the algorithm, including algorithm fundamentals, intuition and math behind it, implementation details, how to use, possible variations and modifications, advantages and limitations and ideal use cases.
@@ -60,8 +60,8 @@ If you're new to this repository, here's how you can get started:
 
 ## Acknowledgements
 
-This script is for educational purposes and was inspired by various machine learning courses and tutorials.
-Special credit and thanks to 
+This was inspired by various machine-learning courses and tutorials.
+Special thanks to 
 * StatQuest with Josh Starmer https://youtube.com/playlist?list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF&si=_Rc68W_GaDNoVJdl 
 * Patrick Loeber https://youtube.com/playlist?list=PLqnslRFeH2Upcrywf-u2etjdxxkL8nl7E&si=Njrvja0dI7NmaPEx 
 
